@@ -19,6 +19,7 @@ body {
 	font-family: 'Noto Serif JP', sans-serif;
 	/* background-color: #fff5e3; */
 	color: rgba(0, 0, 0, 0.6);
+	background-color: #fff4f4;
 }
 
 aside {
@@ -59,7 +60,7 @@ header .container {
 }
 
 header img {
-	max-width: 600px;
+	max-width: 1000px;
 	margin-left: 40%;
 	opacity: 1;
 }
@@ -71,7 +72,7 @@ header h1 {
 	animation: titleAnimation 1.5s;
 	display: inline-block;
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 5%;
 }
 
@@ -106,7 +107,6 @@ nav a:hover {
 
 main {
 	max-width: 1000px;
-	width: 100%;
 	margin: 0 auto;
 }
 
@@ -126,11 +126,6 @@ main .contents li.show img {
 .contents li:not(:first-of-type) {
 	margin-top: 100px;
 }
-
-/* .contents li:nth-of-type(even) {
-	奇数番目は右
-	margin-left: 45%;
-} */
 
 .contents {
 	width: 1000px;
@@ -195,7 +190,7 @@ main .contents li.show img {
 }
 
 .contents img {
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
 	opacity: 0;
 	transition: 1s 0.5s;
@@ -215,11 +210,25 @@ main .contents li.show img {
 	line-height: 18px;
 }
 
+
+
 .Works_box {
 	display: inline-block;
 	vertical-align: top;
-	width: 30%;
+	width: 22%;
 	margin: 10px 5px;
+}
+
+.Works_Class p {
+	border-bottom: 1px solid black;
+	font-size: 30px;
+	white-space: nowrap;
+	margin: 50px 100px 30px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.05em;
+	width: 350px;
+	padding: 1%;
 }
 
 .modalOpen img {
@@ -234,6 +243,7 @@ main .contents li.show img {
 }
 
 .modal {
+	width: 600px;
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -243,7 +253,7 @@ main .contents li.show img {
 	padding: 20px;
 	border-radius: 5%;
 	min-width: 300px;
-	margin: 20px;
+	margin: auto;
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
