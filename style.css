@@ -18,7 +18,7 @@ body {
 	font-family: 'Noto Serif JP', sans-serif;
 	/* background-color: #fff5e3; */
 	color: rgba(0, 0, 0, 0.6);
-	background-color: #fff4f4;
+	background-color: #fff;
 }
 
 aside {
@@ -163,13 +163,18 @@ main .contents li.show img {
 	content: '';
 	display: block;
 	height: 5px;
-	background: repeating-linear-gradient(
+	/* background: repeating-linear-gradient(
 		-45deg,
 		#fc693b,
 		#fca83b 8px,
 		transparent 0,
 		transparent 20px
-	);
+	); */
+}
+
+.contents h2:first-letter{
+  color:#6dacc8;
+  font-size:150%;
 }
 
 .contents h3 {
@@ -227,19 +232,60 @@ main .contents li.show img {
 	margin: 20px auto;
 }
 
+.Works_Class {
+	position: relative;
+	border: solid 1px #f3cbd0;
+  background-color: none;
+	margin: 80px auto;
+	padding: 60px 10px 20px;
+	
+}
+
+.Works_Class:after{
+	background: none;
+	border: 1px solid #f3cbd0;	/* 線の太さ・種類・色 */
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.Works_Class p {
+	/* border-bottom: 1px solid #fc693b; */
+	background-color: white;
+	font-size: 30px;
+	white-space: nowrap;
+	margin: 50px auto 30px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.05em;
+	width: 350px;
+	padding: 1%;
+
+	position: absolute;
+    top: -70px;
+    left: 328px;
+    font-weight: 600;
+    padding: 0 10px;  /* paddingを左右にいれて消す線の長さを延ばす */
+    transform: translateY(-50%);
+}
+
+.req_title {
+	margin: 20px 0 10px;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
 .Works_box {
 	display: inline-block;
 	vertical-align: top;
 	width: 22%;
-	margin: 10px 5px;
-}
+	margin: 20px 5px;
 
-.modalOpen img {
-	transition: 1s;
-	border-radius: 10px;
-	box-shadow: 5px 5px 20px #c8c9cc, -5px -5px 20px #ffffff;
-	cursor: pointer;
-	z-index: 2;
+	padding: 10px;
 }
 
 .Works_box:hover img {
@@ -248,23 +294,6 @@ main .contents li.show img {
 	box-shadow: inset 5px 5px 20px #c8c9cc, inset -5px -5px 20px #ffffff;
 }
 
-.Works_Class {
-	background-color:#ffffffd0;
-	border-radius: 30px;
-}
-
-.Works_Class p {
-	border-bottom: 1px solid #fc693b;
-	font-size: 30px;
-	white-space: nowrap;
-	margin: 50px 100px 30px;
-	line-height: 1;
-	text-align: center;
-	letter-spacing: 0.05em;
-	width: 350px;
-	padding: 1%;
-	
-}
 
 .Works_box .modalOpen:hover img {
 	transition: 1s;
@@ -294,6 +323,14 @@ main .contents li.show img {
 	opacity: 1;
 	visibility: visible;
 	transform: translate(-50%, -50%) scale(1);
+}
+
+.modalOpen img {
+	transition: 1s;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px #c8c9cc, -5px -5px 20px #ffffff;
+	cursor: pointer;
+	z-index: 2;
 }
 
 body.fixed {
@@ -370,7 +407,7 @@ body.fixed {
 }
 
 .Others_box img {
-	height: 25%;
+	width: 50%;
 	cursor: pointer;
 	transition: 0.3s;
 	border-radius: 10px;
@@ -385,6 +422,46 @@ body.fixed {
 	transform: scale(1.1);
 	opacity: 0.8;
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 1000px;
+  height: 500px;
+  background: linear-gradient(90deg, #fde1db, #fff5f3);
+  border-radius: 48% 69% 56% 53% / 100% 73% 43% 49%;
+	/* border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ; */
+  animation: move 10s linear infinite;
+  overflow: hidden;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  background: #fff5f3;
+  background-size: cover;
+  background-position: 35% center;
+}
+
+@keyframes move {
+  50% {
+    border-radius: 80% 20% 59% 41% / 72% 21% 79% 28%;
+  }
+
+  75% {
+    border-radius: 100% 69% 100% 83% / 68% 99% 53% 93%;
+  }
+}
+
+
+
 
 footer {
 	max-width: 1000px;
