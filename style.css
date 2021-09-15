@@ -172,7 +172,7 @@ main .contents li.show img {
 	); */
 }
 
-.contents h2:first-letter{
+.contentsText h2:first-letter{
   color:#6dacc8;
   font-size:150%;
 }
@@ -402,20 +402,24 @@ body.fixed {
 .Others_box {
 	display: inline-block;
 	vertical-align: top;
-	width: 25%;
+	width: 15%;
 	margin: 10px 10px;
 }
 
 .Others_box img {
-	width: 50%;
+	width: 60%;
 	cursor: pointer;
 	transition: 0.3s;
 	border-radius: 10px;
+	margin: auto;
+	text-align: center;
 }
 
 .Others_box p {
-	margin: auto;
+	margin-top: 10px;
 	text-align: center;
+	line-height: 1.8;
+	letter-spacing: 0.3em;
 }
 
 .Others_box .rinkOpen:hover img {
@@ -433,12 +437,12 @@ body.fixed {
 }
 
 .circle {
-  width: 1000px;
-  height: 500px;
+  width: 800px;
+  height: 400px;
   background: linear-gradient(90deg, #fde1db, #fff5f3);
   border-radius: 48% 69% 56% 53% / 100% 73% 43% 49%;
 	/* border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ; */
-  animation: move 10s linear infinite;
+  animation: move 15s linear infinite;
   overflow: hidden;
 }
 
