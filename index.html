@@ -8,6 +8,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
+
 		<script src="index.js" defer></script>
 		<script src="jquery.min.js"></script>
 	</head>
@@ -35,9 +36,27 @@
 		<header>
 			<div class="container">
 				<div id="site_logo">
-					<img src="img/Icon/image4.jpg" />
+					<img src="img/Icon/head_1.jpg" />
 				</div>
-				<h1>Natsumi Kushima</h1>
+				<div class="phrase">
+					<span class="big">想</span>いを<span class="big">伝</span>える<br />
+					イラストを<span class="big">描</span>きます
+				</div>
+				<h2>イラストレーター</h2>
+				<h1>Kushima Natsumi</h1>
+				<p class="circle-text">
+					<span>I</span>
+					<span>&nbsp;</span>
+					<span>l</span>
+					<span>o</span>
+					<span>v</span>
+					<span>e</span>
+					<span> &nbsp;</span>
+					<span>y</span>
+					<span>o</span>
+					<span>u</span>
+					<span>♥</span>
+				</p>
 			</div>
 		</header>
 
@@ -53,7 +72,7 @@
 							<h3>イラスト</h3>
 							<h4>Illust</h4>
 							<div class="S_img">
-								<img src="img/Servise/Design.jpg" alt="Servise"/>
+								<img src="img/Servise/Design.jpg" alt="Servise" />
 							</div>
 							<p>
 								InstagramやTwitterなどのSNSのプロフィール画像を作成いたします。
@@ -64,7 +83,7 @@
 							<h3>デザイン</h3>
 							<h4>Design</h4>
 							<div class="S_img">
-								<img src="img/Servise/Illust.jpg" alt="Servise"/>
+								<img src="img/Servise/Illust.jpg" alt="Servise" />
 							</div>
 							<p>
 								見やすいサイトやエンドユーザーの使いやすさに考慮し作成致します。
@@ -75,7 +94,7 @@
 							<h3>ディレクション</h3>
 							<h4>Direction</h4>
 							<div class="S_img">
-								<img src="img/Servise/Direction.jpg" alt="Servise"/>
+								<img src="img/Servise/Direction.jpg" alt="Servise" />
 							</div>
 							<p>
 								イラストやデザインの仕様が決まっていないお客様でも安心してご利用いただけるように、お客様のイメージに沿ったご提案をさせていただきます。
@@ -93,6 +112,60 @@
 								<h2>Works</h2>
 							</div>
 
+							<div class="Works_Class">
+								<p>着こなし例イラスト</p>
+								<div class="req_title">
+									<div>
+										アパレルブランド「theme.」様とコラボし2WAYビスチェの着こなし例イラストを作成
+									</div>
+									<div>パンフレット作成を担当</div>
+								</div>
+
+								<div class="Works_box">
+									<a class="modalOpen" href="" data-target="theme01">
+										<img
+											src="img/Works/theme案件/theme.様①png.png"
+											alt="neko01"
+										/>
+									</a>
+									<div id="theme01" class="modal js-modal">
+										<h2>2WAYビスチェの着こなし例イラスト①</h2>
+										<img
+											src="img/Works/theme案件/theme.様①png.png"
+											alt="theme01"
+										/>
+										<div class="modalText">
+											<a>
+												商品（ビスチェ）の着方をわかりやすく伝えたいというお悩みを<br />
+												イラストで解決できるようお手伝いをさせていただきました。<br />
+												イラストからデザインまで担当しました。
+											</a>
+										</div>
+										<a class="modalClose" href="">Close</a>
+									</div>
+								</div>
+
+								<div class="Works_box">
+									<a class="modalOpen" href="" data-target="theme02">
+										<img src="img/Works/theme案件/theme.様②.png" alt="neko02" />
+									</a>
+									<div id="theme02" class="modal js-modal">
+										<h2>2WAYビスチェの着こなし例イラスト①</h2>
+										<img
+											src="img/Works/theme案件/theme.様②.png"
+											alt="theme02"
+										/>
+										<div class="modalText">
+											<a>
+												商品（ビスチェ）の着方をわかりやすく伝えたいというお悩みを<br />
+												イラストで解決できるようお手伝いをさせていただきました。<br />
+												イラストからデザインまで担当しました。
+											</a>
+										</div>
+										<a class="modalClose" href="">Close</a>
+									</div>
+								</div>
+							</div>
 
 							<div class="Works_Class">
 								<p>ねことの日常</p>
@@ -104,12 +177,12 @@
 										<h2>策士猫</h2>
 										<img src="img/Works/neko_nichi/image11.png" alt="neko01" />
 										<!-- <div class="modalText">
-																		<a>
-																			ここに文章が入ります。<br />
-																			ここに文章が入ります。<br />
-																			ここに文章が入ります。
-																		</a>
-																	</div> -->
+																			<a>
+																				ここに文章が入ります。<br />
+																				ここに文章が入ります。<br />
+																				ここに文章が入ります。
+																			</a>
+																		</div> -->
 										<a class="modalClose" href="">Close</a>
 									</div>
 								</div>
@@ -332,46 +405,43 @@
 										<a class="modalClose" href="">Close</a>
 									</div>
 								</div>
-							
 
-							<div class="Works_box">
-								<a class="modalOpen" href="" data-target="Fashion05">
-									<img src="img/Works/Fashion/5.jpg" alt="Fashion05" />
-								</a>
-								<div id="Fashion05" class="modal js-modal">
-									<h2>シナモン</h2>
-									<img src="img/Works/Fashion/5.jpg" alt="Fashion05" />
+								<div class="Works_box">
+									<a class="modalOpen" href="" data-target="Fashion05">
+										<img src="img/Works/Fashion/5.jpg" alt="Fashion05" />
+									</a>
+									<div id="Fashion05" class="modal js-modal">
+										<h2>シナモン</h2>
+										<img src="img/Works/Fashion/5.jpg" alt="Fashion05" />
 
-									<a class="modalClose" href="">Close</a>
+										<a class="modalClose" href="">Close</a>
+									</div>
+								</div>
+
+								<div class="Works_box">
+									<a class="modalOpen" href="" data-target="Fashion06">
+										<img src="img/Works/Fashion/6.jpg" alt="Fashion06" />
+									</a>
+									<div id="Fashion06" class="modal js-modal">
+										<h2>ブラックペッパー</h2>
+										<img src="img/Works/Fashion/6.jpg" alt="Fashion06" />
+
+										<a class="modalClose" href="">Close</a>
+									</div>
+								</div>
+
+								<div class="Works_box">
+									<a class="modalOpen" href="" data-target="Fashion07">
+										<img src="img/Works/Fashion/7.jpg" alt="Fashion07" />
+									</a>
+									<div id="Fashion07" class="modal js-modal">
+										<h2>しょうが</h2>
+										<img src="img/Works/Fashion/7.jpg" alt="Fashion07" />
+
+										<a class="modalClose" href="">Close</a>
+									</div>
 								</div>
 							</div>
-
-							<div class="Works_box">
-								<a class="modalOpen" href="" data-target="Fashion06">
-									<img src="img/Works/Fashion/6.jpg" alt="Fashion06" />
-								</a>
-								<div id="Fashion06" class="modal js-modal">
-									<h2>ブラックペッパー</h2>
-									<img src="img/Works/Fashion/6.jpg" alt="Fashion06" />
-
-									<a class="modalClose" href="">Close</a>
-								</div>
-							</div>
-
-							<div class="Works_box">
-								<a class="modalOpen" href="" data-target="Fashion07">
-									<img src="img/Works/Fashion/7.jpg" alt="Fashion07" />
-								</a>
-								<div id="Fashion07" class="modal js-modal">
-									<h2>しょうが</h2>
-									<img src="img/Works/Fashion/7.jpg" alt="Fashion07" />
-
-									<a class="modalClose" href="">Close</a>
-								</div>
-							</div>
-
-						</div>
-
 							<div id="mask" class="mask"></div>
 						</section>
 					</div>
@@ -385,9 +455,12 @@
 								<div class="contentsText">
 									<h2>Others</h2>
 								</div>
-							
+
 								<div class="Others_box">
-									<a class="rinkOpen" href="https://www.instagram.com/n__kakikaki/">
+									<a
+										class="rinkOpen"
+										href="https://www.instagram.com/n__kakikaki/"
+									>
 										<img src="img/Others/Instagram.png" alt="room" />
 									</a>
 									<p>Instagram</p>
@@ -413,11 +486,6 @@
 							</div>
 						</div>
 					</section>
-				
-						
-						
-
-				</body>
 				</li>
 			</ul>
 		</main>
