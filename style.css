@@ -1,5 +1,12 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+@font-face {
+	font-family: はれのそら明朝;
+	src: url('https://cdn.leafscape.be/Harenosora/harenosora_web.woff2')
+		format('woff2');
+}
+
 *,
 *::before,
 *::after {
@@ -60,19 +67,127 @@ header .container {
 
 header img {
 	max-width: 1000px;
-	margin-left: 30%;
 	opacity: 1;
 }
-
-header h1 {
-	font-size: 70px;
+header .phrase {
+	font-size: 35px;
 	/* font-weight: bold; */
 	white-space: nowrap;
 	animation: titleAnimation 1.5s;
 	display: inline-block;
 	position: absolute;
-	top: 30%;
-	left: 5%;
+	top: 25%;
+	left: 10%;
+	font-family: はれのそら明朝;
+	letter-spacing: 0.1em;
+}
+
+header .big {
+	color: #6dacc8;
+	font-size: 150%;
+}
+
+header h2 {
+	font-size: 16px;
+	/* font-weight: bold; */
+	white-space: nowrap;
+	animation: titleAnimation 1.5s;
+	display: inline-block;
+	position: absolute;
+	top: 55%;
+	left: 10%;
+}
+
+header h1 {
+	font-size: 35px;
+	font-weight: bold;
+	white-space: nowrap;
+	animation: titleAnimation 1.5s;
+	display: inline-block;
+	position: absolute;
+	top: 60%;
+	left: 10%;
+}
+
+.circle-text {
+	position: absolute;
+	top: 10%;
+	left: 58%;
+	width: 300px; /* 直径 */
+	height: 300px; /* 直径 */
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	transform: rotate(40deg); /* 円の回転 */
+	animation: titleAnimation 1.5s;
+}
+
+.circle-text span {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 15px); /* 中心点、、文字サイズ分ずらす */
+	display: inline-block;
+	width: 20px; /* 文字サイズより小さくしない */
+	height: 250px; /* 半径 */
+	transform-origin: center bottom; /* 回転の基準点 */
+	/* border: solid 1px; */
+}
+
+.circle-text span:nth-child(1) {
+	transform: rotate(0deg);
+	animation: titleAnimation 1.5s;
+}
+
+.circle-text span:nth-child(2) {
+	transform: rotate(5deg);
+}
+
+.circle-text span:nth-child(3) {
+	transform: rotate(10deg);
+	animation: titleAnimation 5s;
+}
+
+.circle-text span:nth-child(4) {
+	transform: rotate(15deg);
+	animation: titleAnimation 5s;
+}
+
+.circle-text span:nth-child(5) {
+	transform: rotate(20deg);
+	animation: titleAnimation 5s;
+}
+
+.circle-text span:nth-child(6) {
+	transform: rotate(25deg);
+	animation: titleAnimation 5s;
+}
+
+.circle-text span:nth-child(7) {
+	transform: rotate(30deg);
+}
+
+.circle-text span:nth-child(8) {
+	transform: rotate(35deg);
+	animation: titleAnimation 12s;
+}
+
+.circle-text span:nth-child(9) {
+	transform: rotate(40deg);
+	animation: titleAnimation 12s;
+}
+
+.circle-text span:nth-child(10) {
+	transform: rotate(45deg);
+	animation: titleAnimation 12s;
+}
+
+.circle-text span:nth-child(11) {
+	transform: rotate(50deg);
+	animation: titleAnimation 12s;
+}
+
+.circle-text span:nth-child(12) {
+	transform: rotate(65deg);
 }
 
 nav ul li:last-child::after {
@@ -138,7 +253,6 @@ main .contents li.show img {
 	transition: 1s;
 }
 
-
 .contentsText {
 	flex-direction: column;
 	margin: 30px auto;
@@ -172,9 +286,9 @@ main .contents li.show img {
 	); */
 }
 
-.contentsText h2:first-letter{
-  color:#6dacc8;
-  font-size:150%;
+.contentsText h2:first-letter {
+	color: #6dacc8;
+	font-size: 150%;
 }
 
 .contents h3 {
@@ -235,15 +349,14 @@ main .contents li.show img {
 .Works_Class {
 	position: relative;
 	border: solid 1px #f3cbd0;
-  background-color: none;
+	background-color: none;
 	margin: 80px auto;
 	padding: 60px 10px 20px;
-	
 }
 
-.Works_Class:after{
+.Works_Class:after {
 	background: none;
-	border: 1px solid #f3cbd0;	/* 線の太さ・種類・色 */
+	border: 1px solid #f3cbd0; /* 線の太さ・種類・色 */
 	content: '';
 	position: absolute;
 	top: 5px;
@@ -266,11 +379,11 @@ main .contents li.show img {
 	padding: 1%;
 
 	position: absolute;
-    top: -70px;
-    left: 328px;
-    font-weight: 600;
-    padding: 0 10px;  /* paddingを左右にいれて消す線の長さを延ばす */
-    transform: translateY(-50%);
+	top: -70px;
+	left: 328px;
+	font-weight: 600;
+	padding: 0 10px; /* paddingを左右にいれて消す線の長さを延ばす */
+	transform: translateY(-50%);
 }
 
 .req_title {
@@ -293,7 +406,6 @@ main .contents li.show img {
 	opacity: 0.8;
 	box-shadow: inset 5px 5px 20px #c8c9cc, inset -5px -5px 20px #ffffff;
 }
-
 
 .Works_box .modalOpen:hover img {
 	transition: 1s;
@@ -428,44 +540,41 @@ body.fixed {
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	width: 100%;
+	/* height: 100vh; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .circle {
-  width: 800px;
-  height: 400px;
-  background: linear-gradient(90deg, #fde1db, #fff5f3);
-  border-radius: 48% 69% 56% 53% / 100% 73% 43% 49%;
+	width: 800px;
+	height: 400px;
+	background: linear-gradient(90deg, #fde1db, #fff5f3);
+	border-radius: 48% 69% 56% 53% / 100% 73% 43% 49%;
 	/* border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ; */
-  animation: move 15s linear infinite;
-  overflow: hidden;
+	animation: move 15s linear infinite;
+	overflow: hidden;
 }
 
 .image {
-  width: 300px;
-  height: 300px;
-  background: #fff5f3;
-  background-size: cover;
-  background-position: 35% center;
+	width: 300px;
+	height: 300px;
+	background: #fff5f3;
+	background-size: cover;
+	background-position: 35% center;
 }
 
 @keyframes move {
-  50% {
-    border-radius: 80% 20% 59% 41% / 72% 21% 79% 28%;
-  }
+	50% {
+		border-radius: 80% 20% 59% 41% / 72% 21% 79% 28%;
+	}
 
-  75% {
-    border-radius: 100% 69% 100% 83% / 68% 99% 53% 93%;
-  }
+	75% {
+		border-radius: 100% 69% 100% 83% / 68% 99% 53% 93%;
+	}
 }
-
-
-
 
 footer {
 	max-width: 1000px;
